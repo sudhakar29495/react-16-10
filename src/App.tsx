@@ -2,8 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Dashboard from './pages/Dashboard'
 
-function App() {
+function App(props: any) {
   const [count, setCount] = useState(0)
 
   return (
@@ -11,12 +12,15 @@ function App() {
       <h1 className="text-3xl font-bold underline p-[10px]">
         Hello world!
       </h1>
-      <span className="relative flex h-3 w-3">
-        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-        <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
-      </span>
+      <div className='flex flex-wrap'>
+        <img src={reactLogo} alt='logo' className='mx-2' />+
+        <img src={viteLogo} alt='logo' className='mx-2' />+
+        Tailwindcss
+      </div>
+      <h1>User Data From API:</h1>
+      <Dashboard />
     </>
   )
 }
 
-export default App
+export default App;
