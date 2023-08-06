@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import App from './App.tsx';
-import { store, history } from './store.tsx';
+import { store, history } from './store';
 import './styles/index.css';
 import './styles/tailwind.css';
 

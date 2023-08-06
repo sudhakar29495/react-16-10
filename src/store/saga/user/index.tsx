@@ -4,7 +4,7 @@ import {
   fetchUsersSuccess,
   fetchUsersFailure,
 } from '../../reducers/user';
-import { fetchUsersService } from "../../services/user";
+import { fetchUsersService } from "../../services/user.service";
 
 export function* fetchUsersSaga(): any {
   try {
